@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}Orders - Resto ERP{% endblock %}
+
+{% block content %}
+<div class="mb-6">
+    <h1 class="text-3xl font-bold text-slate-800">Order History</h1>
+    <p class="text-gray-500 mt-1">Review past transactions and timestamps</p>
+</div>
+
+<div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+    <table class="w-full text-left border-collapse">
+        <thead class="bg-slate-50 border-b border-gray-200 text-slate-600">
+            <tr>
+                <th class="p-4 font-semibold text-sm">Order ID</th>
+                <th class="p-4 font-semibold text-sm">Staff User ID</th>
+                <th class="p-4 font-semibold text-sm">Date & Time</th>
+                <th class="p-4 font-semibold text-sm">Total Price</th>
+            </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100 text-gray-700">
+            
+            <tr class="hover:bg-slate-50 transition">
+                <td class="p-4 font-bold text-slate-800">#5021</td>
+                <td class="p-4 text-sm">User ID: 3</td>
+                <td class="p-4 text-sm text-gray-500">2026-04-17 14:30:22</td>
+                <td class="p-4 font-bold text-green-600">$45.50</td>
+            </tr>
+            </tbody>
+    </table>
+</div>
+{% endblock %}
